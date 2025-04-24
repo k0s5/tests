@@ -81,7 +81,7 @@ const accountTags = computed({
       ></Select>
       <InputText
         v-model="accountRecordProxy.login"
-        placeholder="Login"
+        placeholder="Логин"
         :invalid="!!validationErrors.login.length"
         @blur="handleValidate"
         style="height: 3rem"
@@ -90,7 +90,7 @@ const accountTags = computed({
         v-if="accountRecordProxy.type === 'local'"
         v-model="accountRecordProxy.password"
         type="password"
-        placeholder="Password"
+        placeholder="Пароль"
         :invalid="!!validationErrors.password.length"
         @blur="handleValidate"
         style="height: 3rem"
