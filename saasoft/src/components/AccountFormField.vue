@@ -68,12 +68,12 @@ const accountTags = computed({
         :pt="{
           root: {
             style: {
-              height: '48px'
+              height: '3rem'
             }
           },
           label: {
             style: {
-              width: '150px',
+              width: '10rem',
               textAlign: 'start'
             }
           }
@@ -84,7 +84,7 @@ const accountTags = computed({
         placeholder="Login"
         :invalid="!!validationErrors.login.length"
         @blur="handleValidate"
-        style="height: 48px"
+        style="height: 3rem"
       />
       <InputText
         v-if="accountRecordProxy.type === 'local'"
@@ -93,11 +93,11 @@ const accountTags = computed({
         placeholder="Password"
         :invalid="!!validationErrors.password.length"
         @blur="handleValidate"
-        style="height: 48px"
+        style="height: 3rem"
       />
       <div
         v-else
-        style="width: 192px"
+        style="width: 12rem"
       ></div>
       <Button
         icon="pi pi-trash"
@@ -112,7 +112,7 @@ const accountTags = computed({
 
 <style>
 .p-inputtext {
-  width: 192px;
-  max-width: 192px;
+  width: 12rem;
+  max-width: 12rem;
 }
 </style>

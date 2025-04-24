@@ -89,9 +89,9 @@ const focusInput = () => {
 
 <style scoped>
 .input-tag {
-  width: 256px;
-  max-width: 256px;
-  min-height: 46px;
+  width: 16rem;
+  max-width: 16rem;
+  min-height: 3rem;
   display: flex;
   flex-flow: wrap;
   font-family: inherit;
@@ -121,7 +121,7 @@ const focusInput = () => {
 }
 .input-tag__input {
   font-size: 1rem;
-  margin: 0.25rem;
+  margin-top: 0.25rem;
   border: none;
   background: transparent;
   display: inline-flex;
