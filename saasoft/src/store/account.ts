@@ -45,7 +45,7 @@ export const useAccountStore = defineStore('account', {
       this.hasUnsavedAccounts = false
     },
     deleteAccount(index: number) {
-      if (this.accounts.length === index + 1) {
+      if (this.accounts.length === index + 1 && this.hasUnsavedAccounts) {
         this.accounts.pop()
         this.hasUnsavedAccounts = false
         return
